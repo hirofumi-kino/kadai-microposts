@@ -46,8 +46,4 @@ class User < ApplicationRecord
     self.likes.include?(favo)
   end
   
-  def favo_microposts
-    Micropost.where(id: self.like_ids)
-  end
- 
 end
